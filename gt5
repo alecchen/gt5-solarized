@@ -3,21 +3,24 @@ version=1.4.0
 
 #HTML-colours: ---------------------------------------------------------------
 
-BG=#002b36     #background
-DIR=#268bd2    #dir-links
-VDIR=#6c71c4
-FILE=#2aa198   #file-links
-HR=#fdf6e3     #seperators
-LAST=#859900   #last check was on ...
-LAST2=#d33682  # ... date_string ...
-LAST3=#d33682  # ... time since
-LESS=#cb4b16   #smaller files
-MORE=#dc322f   #bigger files
-NEW=#b58900    #new files
-PC=#586e75     #percent
-SIZE=#93a1a1   #sizes
-SUM=#eee8d5    #dir-size
-TEXT=#839496   #plaintext
+               #  ----------------------------
+               #  solarized  gt5      comments
+               #  ----------------------------
+BG=#002b36     #  base02     black    background
+DIR=#268bd2    #  blue       blue     dir-links
+VDIR=#6c71c4   #  violet     N/A      visited dir-links
+FILE=#2aa198   #  cyan       cyan     file-links
+HR=#fdf6e3     #  base3      olive    seperators
+LAST=#859900   #  green      green    last check was on ...
+LAST2=#d33682  #  magenta    magenta  ... date_string ...
+LAST3=#d33682  #  magenta    magenta  ... time since
+LESS=#cb4b16   #  orange     lime     smaller files
+MORE=#dc322f   #  red        red      bigger files
+NEW=#b58900    #  yellow     yellow   new files
+PC=#586e75     #  darkred    darkred  percent
+SIZE=#93a1a1   #  base1      purple   sizes
+SUM=#eee8d5    #  white      white    dir-size
+TEXT=#839496   #  base0      grey     plaintext
 
 #needed binaries: ------------------------------------------------------------
 
