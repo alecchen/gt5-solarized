@@ -3,20 +3,21 @@ version=1.4.0
 
 #HTML-colours: ---------------------------------------------------------------
 
-BG=black       #background
-DIR=blue       #dir-links
-FILE=cyan      #file-links
-HR=olive       #seperators
-LAST=green     #last check was on ...
-LAST2=magenta  # ... date_string ...
-LAST3=magenta  # ... time since
-LESS=lime      #smaller files
-MORE=red       #bigger files
-NEW=yellow     #new files
-PC=darkred     #percent
-SIZE=purple    #sizes
-SUM=white      #dir-size
-TEXT=grey      #plaintext
+BG=#002b36     #background
+DIR=#268bd2    #dir-links
+VDIR=#6c71c4
+FILE=#2aa198   #file-links
+HR=#fdf6e3     #seperators
+LAST=#859900   #last check was on ...
+LAST2=#d33682  # ... date_string ...
+LAST3=#d33682  # ... time since
+LESS=#cb4b16   #smaller files
+MORE=#dc322f   #bigger files
+NEW=#b58900    #new files
+PC=#586e75     #percent
+SIZE=#93a1a1   #sizes
+SUM=#eee8d5    #dir-size
+TEXT=#839496   #plaintext
 
 #needed binaries: ------------------------------------------------------------
 
@@ -366,7 +367,7 @@ sort -k3 -k1,1nr |
     if (!x) print "     directory seems to be empty\n\n\ngt5 v'"$version ($P)"'"
     printf "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html;"
     printf " charset='${GT5_CHARSET:-$LANG}'\"></head><body bgcolor='$BG'"
-    print " text='$TEXT' link='$DIR'><pre>"
+    print " text='$TEXT' link='$DIR' vlink='$VDIR'><pre>"
   }
 ' | awk '
   {gsub(/'"$SPACE"'/, " "); gsub(/'"$TAB"'/, "	"); b[NR]=$0}
